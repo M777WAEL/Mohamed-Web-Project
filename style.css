@@ -1,3 +1,19 @@
+@keyframes fadeSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  body {
+    animation: fadeSlideIn 1s ease-in-out;
+  }
+  
+  
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     font-family: "Poppins", sans-serif;
@@ -306,6 +322,45 @@ transform: scale(1.1);
     font-size: 1em;
     margin-bottom: 20px;
 }
+/* Table Styles */
+.schedule-table-container
+ {
+  padding: 7px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 10px;
+  text-align: center;
+  border: none; 
+
+}
+    
+
+.schedule-table th {
+  background-image: linear-gradient(to right, rgb(240, 16, 16), rgb(254, 255, 255));
+  background-color: #dd2505; /* Blue */
+  color: white;
+  border: none;
+
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa; /* Light gray */
+}
+
+.schedule-table tbody tr:hover {
+    background-image: linear-gradient(to right, rgb(240, 16, 16), rgb(254, 255, 255));
+}
+
+  
 
 .footer{
     background-color: hsl(249, 100%, 5%);
