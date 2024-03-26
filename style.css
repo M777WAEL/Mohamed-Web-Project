@@ -345,7 +345,7 @@ transform: scale(1.1);
     
 
 .schedule-table th {
-  background-image: linear-gradient(to right, rgb(240, 16, 16), rgb(254, 255, 255));
+  
   background-color: #dd2505; /* Blue */
   color: white;
   border: none;
